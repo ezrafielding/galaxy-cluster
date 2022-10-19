@@ -11,8 +11,8 @@ class GalaxyEncoder(Model):
             layers.MaxPool2D((2,2), padding="same", strides=2),
             # layers.Conv2D(8, (3,3), 1, padding="same", activation="relu"),
             # layers.MaxPool2D((2,2), padding="same", strides=2),
-            layers.Conv2D(8, (3,3), 1, padding="same", activation="relu"),
-            layers.MaxPool2D((2,2), padding="same", strides=2),
+            # layers.Conv2D(8, (3,3), 1, padding="same", activation="relu"),
+            # layers.MaxPool2D((2,2), padding="same", strides=2),
             layers.Flatten()
         ])
         self.decoder = tf.keras.Sequential ([
