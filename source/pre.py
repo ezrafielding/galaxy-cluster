@@ -9,7 +9,6 @@ def pre_processing (data, size = 56):
     dataResized = transformResize(dataGrey)
     #normalize
     dataPre = dataResized/255
-    print(len(dataPre))
     dataPre = np.array(dataPre.reshape(len(dataPre),size,size))
 
     return dataPre
